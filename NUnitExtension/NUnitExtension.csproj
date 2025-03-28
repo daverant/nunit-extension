@@ -1,19 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <LangVersion>default</LangVersion>
+        <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
-
-    <ItemGroup>
-      <PackageReference Include="NUnit.Engine" Version="3.19.2" />
-    </ItemGroup>
 
     <ItemGroup>
       <None Update="NUnitExtension.addins">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NUnit.Engine" Version="3.19.2" />
     </ItemGroup>
 
 </Project>
